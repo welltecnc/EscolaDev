@@ -2,21 +2,225 @@
 <!DOCTYPE html>
 <!-- INICIA O HTML E DEFINE A LINGUAGEM -->
 <html lang="pt-BR">
-<!--INICIO CABEÇALHO  -->
-<head>
+  <!--INICIO CABEÇALHO  -->
+  <head>
     <!-- IDENTIFICA CARACTERES ESPECIAIS E ACENTOS -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!--IDENTIFICA A RESOLUÇÃO DO DISPOSITIVO  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ADICIONANDO ICONE  -->
+    <link rel="shortcut icon" href="./src/assets/icone.png" />
+
     <!-- TITULO DA PÁGINA -->
     <title>Escola Dev</title>
     <!-- FINAL CABEÇALHO -->
-</head>
-<!-- INICIO DO CORPO DA PÁGINA -->
-<body>
+  </head>
+  <!-- INICIO DO CORPO DA PÁGINA -->
+  <body>
+    <!-- CABEÇALHO DO CORPO PÁGINA -->
+    <header>
+      <!-- NAVEGAÇÃO DAS PÁGINAS -->
+      <nav>
+        <!-- LISTA NÃO ORDENADA -->
+        <ul>
+          <li>Inicio</li>
+          <li>Linguagens</li>
+          <li>Sobre</li>
+        </ul>
+      </nav>
 
-    
+      <!-- TIPOS DE TITULOS DA PÁGINA -->
+      <h1>ESCOLA DE PROGRAMADORES</h1>
+      <h2>Seja Bem-Vindo a nossa Escola</h2>
+      <h3>Desenvolvedor Nível 1</h3>
+      <h4>Desenvolvedor Nível 2</h4>
+      <h5>Desenvolvedor Nível 3</h5>
+      <h6>Desenvolvedor Nível 4</h6>
+    </header>
+
+    <div>
+      <!-- ESTRUTURA QUE VAI RECEBER TODO O CONTEÚDO , COMO UM CONTAINER -->
+      <main>
+        <h2>Cursos mais Procurados</h2>
+        <!-- CRIA UMA LINHA DIVISÓRIA -->
+        <hr />
+        <!-- PARAGRAFOS -->
+        <p>Linguagens de Programação utilizadas</p>
+        <!-- MANIPULA CONTEÚDO -->
+        <article>
+          <!-- DIVISOR DA PÁGINA -->
+          <div>
+            <h2>C#</h2>
+            <p>Uma Linguagem versátil e bem estruturada</p>
+            <!--TRATAMENTO DE IMAGENS -->
+            <img
+              src="./src/assets/Imagem1.jpg"
+              alt="tecnologia"
+              title="tecnologia"
+              width="600"
+            />
+          </div>
+          <section>
+            <h3>Saiba Mais</h3>
+            <!-- LISTA ORDENADAS -->
+            <ol type="I">
+              <li>Criada pela Microsoft</li>
+              <li>Lançada em 2000</li>
+              <li>Orientada a Objetos</li>
+              <li>Multiplataforma</li>
+            </ol>
+          </section>
+        </article>
+
+        <article>
+          <!-- DIVISOR DA PÁGINA -->
+          <div>
+            <h2>Java</h2>
+            <p>Uma Linguagem portátil e independete de plataforma</p>
+            <!--TRATAMENTO DE IMAGENS -->
+            <img
+              src="./src/assets/Imagem1.jpg"
+              alt="tecnologia"
+              title="tecnologia"
+              width="600"
+            />
+          </div>
+          <section>
+            <h3>Saiba Mais</h3>
+            <!-- LISTA ORDENADAS -->
+            <ol>
+              <li>Criada pela Sun MicroSystems</li>
+              <li>Lançada em 1995</li>
+              <li>Orientada a Objetos</li>
+              <li>Uma das linguagens mais utilizadas do mundo</li>
+            </ol>
+          </section>
+        </article>
+      </main>
+      <!--CONTEÚDO LATERAL  -->
+      <aside>
+        <h3>Pilares da Orientação a Objetos</h3>
+        <!-- LISTA DE DEFINIÇÃO -->
+        <dl>
+          <dt>Abstração</dt>
+          <dd>Descrição de Abstração</dd>
+          <dt>Polimorfismo</dt>
+          <dd>Descrição de Polimorfismo</dd>
+          <dt>Encapsulamento</dt>
+          <dd>Descrição de Encapsulamento</dd>
+          <dt>Herança</dt>
+          <dd>Descrição de Herança</dd>
+        </dl>
+      </aside>
+    </div>
+    <section>
+      <!-- FORMULÁRIOS -->
+      <h3>Acesso Aluno</h3>
+      <form action="dados.html">
+        <input type="text" placeholder="Digite seu nome" required />
+        <input type="password" placeholder="Digite sua senha" required />
+        <button type="submit">Logar</button>
+      </form>
+      <hr />
+      <form>
+        <fieldset>
+          <legend>Tipos de Inputs</legend>
+          <p>Input de texto: <input type="text" /></p>
+          <p>Input de senha: <input type="password" /></p>
+          <p>Input de checkbox: <input type="checkbox" /></p>
+          <p>Input de Radio: <input type="radio" /></p>
+          <p>Input de Telefone: <input type="tel" name="Telefone" /></p>
+          <p>Input de email: <input type="email" /></p>
+          <p>Input de Pesquisar: <input type="search" name="search" /></p>
+          <p>Input de URL: <input type="url" name="website" /></p>
+          <p>
+            Input de Imagem:
+            <input type="image" src="./src/assets/icone.png" alt="Enviar" />
+          </p>
+          <p>Input de Hora: <input type="time" /></p>
+          <p>Input de Data: <input type="date" /></p>
+          <p>Input de Range: <input type="range" /></p>
+          <p>Input de submit: <input type="submit" value="Enviar" /></p>
+          <p>Input de Color: <input type="color" /></p>
+          <p>Input de Arquivo: <input type="file" /></p>
+          <p>Input de Hidden: <input type="hidden" /></p>
+          <p>Input de Numero: <input type="number" /></p>
+          <p>Input de Numero Personalizado: <input type="number" min="1" max="5" /></p>
+          <p>Input de Reset: <input type="reset" /></p>
+
+          <h2>Selecione uma opção</h2>
+          <select name="select">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JAVASCRIPT</option>
+          </select>
+
+          <h2>Selecione um grupo de opções</h2>
+          <select name="tipos">
+                <optgroup label="Linguagem">
+                    <option>JAVA</option>
+                    <option>C#</option>
+                </optgroup>
+                <optgroup label="Framework">
+                    <option>React</option>
+                    <option>Angular</option>
+                    <option>Vue</option>
+                </optgroup>
+          </select>
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+        <h3>Tabela de Cursos Rápidos</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PYTHON</td>
+                    <td>Uma Linguagem Moderna</td>
+                    <td><img src="./src/assets/Imagem1.jpg" width="100"></td>
+                </tr>
+                <tr>
+                    <td>JAVASCRIPT</td>
+                    <td>Uma Linguagem de alto Nível</td>
+                    <td><img src="./src/assets/Imagem1.jpg" width="100"></td>
+                </tr>
+                <tr>
+                    <td>GO LANG</td>
+                    <td>Uma Linguagem dinâmica</td>
+                    <td><img src="./src/assets/Imagem1.jpg" width="100"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Atenção</td>
+                    <td>Promoção</td>
+                    <td>Válido por 30 </td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
+    <footer>
+    <!-- LINKS -->
+     <h3>ACESSO RÁPIDO</h3>
+     <a href="https://www.google.com.br">Página Google</a>
+     <h3>Acesso a uma página Interna</h3>
+     <a href="dados.html">Página de Dados</a>
+    <hr>
+    <h4>&copy; 2025- Tecnologia de Ponta</h4>
+
+    </footer>
+
     <!-- FINAL DO CORPO DA PÁGINA -->
-</body>
-<!-- FINAL DO HTML -->
+  </body>
+  <!-- FINAL DO HTML -->
 </html>
