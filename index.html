@@ -8,6 +8,8 @@
     <meta charset="UTF-8" />
     <!--IDENTIFICA A RESOLUÇÃO DO DISPOSITIVO  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS EXTERNO -->
+     <link rel="stylesheet" href="./src/css/estilo.css">
     <!-- ADICIONANDO ICONE  -->
     <link rel="shortcut icon" href="./src/assets/icone.png" />
 
@@ -23,9 +25,9 @@
       <nav>
         <!-- LISTA NÃO ORDENADA -->
         <ul>
-          <li>Inicio</li>
-          <li>Linguagens</li>
-          <li>Sobre</li>
+          <li><a>Inicio</a></li>
+          <li><a>Linguagens</a></li>
+          <li><a>Sobre</a></li>
         </ul>
       </nav>
 
@@ -38,7 +40,7 @@
       <h6>Desenvolvedor Nível 4</h6>
     </header>
 
-    <div>
+    <div class="container">
       <!-- ESTRUTURA QUE VAI RECEBER TODO O CONTEÚDO , COMO UM CONTAINER -->
       <main>
         <h2>Cursos mais Procurados</h2>
@@ -130,7 +132,7 @@
           <p>Input de checkbox: <input type="checkbox" /></p>
           <p>Input de Radio: <input type="radio" /></p>
           <p>Input de Telefone: <input type="tel" name="Telefone" /></p>
-          <p>Input de email: <input type="email" /></p>
+          <p>Input de email: <input type="email"/></p>
           <p>Input de Pesquisar: <input type="search" name="search" /></p>
           <p>Input de URL: <input type="url" name="website" /></p>
           <p>
@@ -173,7 +175,7 @@
 
     <section>
         <h3>Tabela de Cursos Rápidos</h3>
-        <table border="1">
+        <table id="tb">
             <thead>
                 <tr>
                     <th>Nome</th>
